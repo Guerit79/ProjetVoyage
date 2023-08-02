@@ -1,0 +1,25 @@
+<header class="navbar">
+  <h1 class="logo">LOGO</h1> <!-- IMG class logo-->
+  <nav class="nav">
+    <ul class="nav__links">
+      <li><a routerLink="/main">Accueil</a></li>
+      <li><a routerLink="/public">Carte</a></li>
+      <li *ngIf="isAdmin || isUser" routerLink="/favori"><a >Favoris</a></li>
+      <li *ngIf="isAdmin"><a routerLink="">Administration</a></li>
+    </ul>
+  </nav>
+  <ul class="auth">
+    <li><a class="cta" *ngIf="!isAdmin && !isUser"><button routerLink="/login">Connexion</button></a></li>
+    <li *ngIf="isAdmin || isUser"><button (click)="logout()">Déconnexion</button></li>
+  </ul>
+
+</header>
+
+
+<!--
+  [routerLink]="/home"
+  [routerLink]="/map"
+  [routerLink]="/Favoris"
+
+  [routerLink]="/Contact"
+-->

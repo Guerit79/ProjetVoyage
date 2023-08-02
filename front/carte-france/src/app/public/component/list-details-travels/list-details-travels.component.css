@@ -1,0 +1,102 @@
+:root {
+    font-size: 100px;
+    --blue: #0074D9;
+    --darkblue: #005FB2;
+}
+
+.container {
+    position: absolute;
+    overflow: hidden;
+}
+
+.voyage-items{
+    padding: 10px 20px 10px 20px;
+    margin: 30px 0px 10px 0px;
+    border-radius: 10px;
+    background-color: #444654;
+}
+  
+.list-voyage {
+    position:fixed;
+    overflow-y: auto;
+    top: 102px;
+    width: 300px;
+    right: 0;
+    padding: 10px;
+    height: 87vh;
+    background-color: #202123;
+    
+}
+
+
+
+
+/* SCROLL BAR DESIGN */
+
+.list-voyage::-webkit-scrollbar {
+    width: 10px;
+    height: auto;
+}
+  
+.list-voyage::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+.list-voyage::-webkit-scrollbar-thumb {
+    background:#888; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/* SCROLL BAR DESIGN */
+
+input{
+    width: 20px; /* Largeur de la case */
+    height: 20px; /* Hauteur de la case */
+}
+
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.description{
+    margin: 20px 5px 20px 5px;
+}
+
+.clicable{
+    display: flex;
+    flex-direction: row;
+}
+
+.element{
+    width: 50%;
+    text-align: center;
+    padding: 30px 20px 10px 20px;
+}
+
+h1, p {
+    color: white;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* Favori DESIGN */
+
+
+
+/* LIKE DESIGN */
+
+
+

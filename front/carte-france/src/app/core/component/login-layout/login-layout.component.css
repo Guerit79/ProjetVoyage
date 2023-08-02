@@ -1,0 +1,90 @@
+body {
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-check {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-check input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .forgot-password {
+    margin-left: auto;
+    font-size: 14px;
+    text-decoration: none;
+    color: #999;
+    transition: color 0.3s ease;
+  }
+  
+  .forgot-password:hover {
+    color: #666;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .register {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register p {
+    margin-bottom: 10px;
+  }
+  
+  .register a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .register a:hover {
+    color: #3e8e41;
+  }

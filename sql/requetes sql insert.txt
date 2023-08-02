@@ -1,0 +1,83 @@
+INSERT INTO region (id_region, nom)
+VALUES
+('FR-GES', 'Grand Est'),
+('FR-NAQ', 'Nouvelle-Aquitaine'),
+('FR-ARA', 'Auvergne-Rhône-Alpes'),
+('FR-BFC', 'Bourgogne-Franche-Comté'),
+('FR-BRE', 'Bretagne'),
+('FR-CVL', 'Centre-Val de Loire'),
+('FR-COR', 'Corse'),
+('FR-IDF', 'Île-de-France	'),
+('FR-OCC', 'Occitanie'),
+('FR-HDF', 'Hauts-de-France'),
+('FR-NOR', 'Normandie'),
+('FR-PDL', 'Pays de la Loire'),
+('FR-PAC', 'Provence-Alpes-Côte Azur');
+
+INSERT INTO role_utilisateur (id_role_utilisateur, nomRole)
+VALUES
+(1, 'user'),
+(2, 'admin');
+
+INSERT INTO utilisateur (id_utilisateur, pseudo, mail, mdp, id_role_utilisateur)
+VALUES
+(1, 'pseudoUser', 'clecle.guerit@gmail.com', 'test', 1),
+(2, 'pseudoAdmin', 'clement.guerit79@gmail.com', 'test', 2);
+
+INSERT INTO voyage (id_voyage, titre, description, compteurLike, id_region)
+VALUES
+(1, 'Parc Asterix', 'Parc à thème situé près de Paris, inspiré de l''univers des bandes dessinées d Astérix et Obélix, offrant des attractions palpitantes, des spectacles divertissants et une immersion dans l époque gauloise', '50', 'FR-IDF'),
+(2, 'Aquarium de La Rochelle', ' Aquarium situé sur la côte atlantique de la France, abritant une grande variété d espèces marines fascinantes, offrant aux visiteurs une expérience éducative et immersive au cœur de l océan', '12', 'FR-NAQ'),
+(3, 'Futuroscope', 'Parc à thème situé près de Poitiers, axé sur les technologies et les médias du futur, proposant des attractions innovantes, des projections 3D, des spectacles multimédias et des expériences interactives pour une expérience futuriste unique.', '1', 'FR-NAQ'),
+(4, 'Cathedrale de Nantes', 'Imposante cathédrale gothique située à Nantes, en France, connue pour son architecture remarquable, ses vitraux colorés et son histoire fascinante. Elle est un symbole culturel et historique important de la ville de Nantes', '30', 'FR-PDL');
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO region (id_region, nom)
+VALUES
+('1', 'Grand Est'),
+('2', 'Nouvelle-Aquitaine'),
+('3', 'Auvergne-Rhône-Alpes'),
+('4', 'Bourgogne-Franche-Comté'),
+('5', 'Bretagne'),
+('6', 'Centre-Val de Loire'),
+('7', 'Corse'),
+('8', 'Île-de-France	'),
+('9', 'Occitanie'),
+('10', 'Hauts-de-France'),
+('11', 'Normandie'),
+('12', 'Pays de la Loire'),
+('13', 'Provence-Alpes-Côte Azur');
+
+INSERT INTO role_utilisateur (id_role_utilisateur, nomRole)
+VALUES
+(1, 'user'),
+(2, 'admin');
+
+INSERT INTO utilisateur (id_utilisateur, pseudo, mail, mdp, id_role_utilisateur)
+VALUES
+(1, 'pseudoUser', 'clecle.guerit@gmail.com', 'test', 1),
+(2, 'pseudoAdmin', 'clement.guerit79@gmail.com', 'test', 2);
+
+INSERT INTO voyage (id_voyage, titre, description, compteur_like, id_region)
+VALUES
+(1, 'Parc Asterix', 'Parc à thème situé près de Paris, inspiré de l''univers des bandes dessinées d Astérix et Obélix, offrant des attractions palpitantes, des spectacles divertissants et une immersion dans l époque gauloise', '50', 'FR-IDF'),
+(2, 'Aquarium de La Rochelle', ' Aquarium situé sur la côte atlantique de la France, abritant une grande variété d espèces marines fascinantes, offrant aux visiteurs une expérience éducative et immersive au cœur de l océan', '12', 'FR-NAQ'),
+(3, 'Futuroscope', 'Parc à thème situé près de Poitiers, axé sur les technologies et les médias du futur, proposant des attractions innovantes, des projections 3D, des spectacles multimédias et des expériences interactives pour une expérience futuriste unique.', '1', 'FR-NAQ'),
+(4, 'Cathedrale de Nantes', 'Imposante cathédrale gothique située à Nantes, en France, connue pour son architecture remarquable, ses vitraux colorés et son histoire fascinante. Elle est un symbole culturel et historique important de la ville de Nantes', '30', 'FR-PDL');
+
+
+
+
+
+
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver

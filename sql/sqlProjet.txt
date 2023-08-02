@@ -1,0 +1,39 @@
+CREATE TABLE role_utilisateur(
+   id_role_utilisateur INT,
+   nom_role VARCHAR(255) NOT NULL,
+   PRIMARY KEY(id_role_utilisateur)
+);
+
+CREATE TABLE region(
+   id_region INT,
+   nom VARCHAR(255) NOT NULL,
+   PRIMARY KEY(id_region)
+);
+
+CREATE TABLE utilisateur(
+   id_utilisateur INT,
+   pseudo VARCHAR(255),
+   mail VARCHAR(255),
+   mdp VARCHAR(255),
+   id_role_utilisateur INT NOT NULL,
+   PRIMARY KEY(id_utilisateur),
+   FOREIGN KEY(id_role_utilisateur) REFERENCES role_utilisateur(id_role_utilisateur)
+);
+
+CREATE TABLE voyage(
+   id_voyage INT,
+   titre VARCHAR(255),
+   description VARCHAR(255),
+   compteur_like INT,
+   id_region INT NOT NULL,
+   PRIMARY KEY(id_voyage),
+   FOREIGN KEY(id_region) REFERENCES region(id_region)
+);
+
+CREATE TABLE Favori(
+   id_utilisateur INT,
+   id_voyage INT,
+   PRIMARY KEY(id_utilisateur, id_voyage),
+   FOREIGN KEY(id_utilisateur) REFERENCES utilisateur(id_utilisateur),
+   FOREIGN KEY(id_voyage) REFERENCES voyage(id_voyage)
+);

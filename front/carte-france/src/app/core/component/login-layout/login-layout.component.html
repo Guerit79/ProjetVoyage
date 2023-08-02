@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Connexion</h1>
+    <form (ngSubmit)="onSubmit()" >
+      <label for="username">Nom d'utilisateur :</label>
+      <input type="text" id="pseudo" name="pseudo" [(ngModel)]="pseudo" required>
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="mdp" name="mdp"  [(ngModel)]="mdp" required>
+
+      <div class="form-footer">
+        <div class="form-check">
+          <input type="checkbox" id="remember" name="remember">
+          <label for="remember">Se souvenir de moi</label>
+        </div>
+        <a routerLink="/forgot-password" class="forgot-password">Mot de passe oublié ?</a>
+      </div>
+
+      <input type="submit" value="Se connecter">
+    </form>
+
+    <div class="register">
+      <p>Vous n'avez pas encore de compte ?</p>
+      <a routerLink="/create-acount">Créer un compte</a>
+    </div>
+  </div>

@@ -1,0 +1,14 @@
+.contain{
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #202123;
+  border-radius: 20px;
+}
+
+.text{
+  padding: 10px 30px 10px 30px;
+  color:whitesmoke;
+  font-size: large;
+}

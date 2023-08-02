@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="list-voyage">
+      <div class="voyage-items" *ngFor="let travel of travelList">
+        <h1>{{ travel.titre }}</h1>
+        <p class="description"> {{ travel.description }}</p>
+        <div class="clicable">
+            <div class="element">
+                <input [(ngModel)]="isChecked" (change)="updateCounter()" type="checkbox" id="likeId" name="Like">
+                <p>{{ travel.compteurLike  }}</p>
+                <!--<p>{{ numberOfLikes }}</p>-->
+            </div>
+            <div class="like" class="element">
+                <input class="input-like" type="checkbox" id="favorite" name="Favori" >
+                <p>Favori</p>
+            </div>
+        </div>
+      </div>
+  </div>
